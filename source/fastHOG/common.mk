@@ -55,11 +55,11 @@ DARWIN = $(strip $(findstring DARWIN, $(OSUPPER)))
 SRCDIR      ?= 
 SRCDIRUTILS ?= Utils
 SRCDIRHOG   ?= HOG
-ROOTDIR     ?= $(CUDA_INSTALL_PATH)/sdk
+ROOTDIR     ?= $(CUDA_INSTALL_PATH)
 ROOTBINDIR  ?= bin
 BINDIR      ?= $(ROOTBINDIR)
 ROOTOBJDIR  ?= obj
-LIBDIR      := $(ROOTDIR)/lib
+LIBDIR      := $(ROOTDIR)/lib64
 COMMONDIR   := $(ROOTDIR)/common
 
 # Compilers
@@ -214,7 +214,6 @@ ifneq ($(STATIC_LIB),)
 	TARGET   := $(subst .a,$(LIBSUFFIX).a,$(LIBDIR)/$(STATIC_LIB))
 	LINKLINE  = ar rucv $(TARGET) $(OBJS) 
 else
-	LIB += -lcutil$(LIBSUFFIX)
 	# Device emulation configuration
 	ifeq ($(emu), 1)
 		NVCCFLAGS   += -deviceemu
@@ -232,6 +231,7 @@ else
 	LIB += -lboost_thread
 	#read images in HOGImage from file
 	LIB += -lfreeimage
+	LIB += -lboost_system
 	LINKLINE  = $(LINK) -o $(TARGET) $(OBJS) $(LIB)
 endif
 

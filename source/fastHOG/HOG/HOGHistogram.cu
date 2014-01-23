@@ -1,5 +1,6 @@
 #include "HOGHistogram.h"
 #include "HOGUtils.h"
+#include "cutil.h"
 
 __device__ __constant__ float cenBound[3], halfBin[3], bandWidth[3], oneHalf = 0.5f;
 __device__ __constant__ int tvbin[3];

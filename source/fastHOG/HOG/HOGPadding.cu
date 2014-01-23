@@ -1,5 +1,6 @@
 #include "HOGPadding.h"
 #include "HOGUtils.h"
+#include "cutil.h"
 
 extern int hWidthROI, hHeightROI;
 extern int hPaddedWidth, hPaddedHeight;

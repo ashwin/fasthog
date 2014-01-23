@@ -1,5 +1,6 @@
 #include "HOGSVMSlider.h"
 #include "HOGUtils.h"
+#include "cutil.h"
 
 texture<float, 1, cudaReadModeElementType> texSVM;
 cudaArray *svmArray = 0;

@@ -5,6 +5,7 @@
 #include "HOGSVMSlider.h"
 #include "HOGScale.h"
 #include "HOGPadding.h"
+#include "cutil.h"
 
 int hWidth, hHeight;
 int hWidthROI, hHeightROI;

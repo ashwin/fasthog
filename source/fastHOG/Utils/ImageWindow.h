@@ -10,6 +10,7 @@
 #include "../HOG/HOGImage.h"
 
 #include <vector>
+#include <cstddef>
 
 using namespace HOG;
 

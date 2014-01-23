@@ -1,3 +1,10 @@
+//-----------------------------------------------------------------------------
+// These functions and macros were copied over from the old cutil header files,
+// so that FastHOG could be compiled.
+// The cutil files were picked from the GPU Computing SDK that shipped with
+// the old CUDA 3.2 SDK.
+//-----------------------------------------------------------------------------
+
 #pragma once
 
 // Give a little more for Windows : the console window often disapears before we can read the message

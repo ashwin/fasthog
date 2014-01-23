@@ -1,5 +1,6 @@
 #include "HOGScale.h"
 #include "HOGUtils.h"
+#include "cutil.h"
 
 extern int rPaddedHeight;
 extern int rPaddedWidth;

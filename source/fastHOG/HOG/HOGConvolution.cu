@@ -1,5 +1,6 @@
 #include "HOGConvolution.h"
 #include "HOGUtils.h"
+#include "cutil.h"
 
 dim3 blockGridRows;
 dim3 blockGridColumns;
