@@ -1,0 +1,1 @@
+ --import %laneid,%ctaid,%nctaid,%smid,A7,%pm3,%pm2,%pm1,__CC-temp__0__,%pm0,%tid,%clock,%warpid,%ntid,%gridid --export _Z14float1toUchar1P6float1P6uchar1ii,_Z14uchar4tofloat4P6uchar4P6float4ii,_Z14float2toUchar1P6float2P6uchar1iii,_Z14float4toUchar4P6float4P6uchar4ii,_Z14float2toUchar4P6float2P6uchar4iii,_Z14float1toUchar4P6float1P6uchar4ii
